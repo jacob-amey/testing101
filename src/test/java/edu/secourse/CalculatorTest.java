@@ -33,4 +33,12 @@ class CalculatorTest {
                 () -> assertEquals(9, Calculator.sqrt(81)
         ));;
     }
+
+    @Test
+    @DisplayName("multiply(): multiply two numbers")
+    void divide() {
+        assertAll(
+                () -> assertEquals(2, Calculator.divide(4, 2))
+        );
+    }
 }
