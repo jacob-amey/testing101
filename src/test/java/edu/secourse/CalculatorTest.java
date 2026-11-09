@@ -19,9 +19,18 @@ class CalculatorTest {
     }
 
     @Test
+    @DisplayName("multiply(): multiply two numbers")
     void multiply() {
         assertAll(
                 () -> assertEquals(0.0, Calculator.multiply(-3.0, 0.0))
         );
+    }
+
+    @Test
+    @DisplayName("Sqrt()")
+    void sqrt(){
+        assertAll(
+                () -> assertEquals(9, Calculator.sqrt(81)
+        ));;
     }
 }
