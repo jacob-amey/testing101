@@ -21,7 +21,7 @@ class CalculatorTest {
     }
 
     @Test
-    @DisplayName("add(): add two double numbers")
+    @DisplayName("add(): add two integer numbers")
     void addInt() {
         assertAll(
                 () -> assertEquals(2, Calculator.add(1, 1)),
@@ -39,7 +39,7 @@ class CalculatorTest {
     }
 
     @Test
-    @DisplayName("multiply(): multiply two double numbers")
+    @DisplayName("multiply(): multiply two integer numbers")
     void multiplyInt() {
         assertAll(
                 () -> assertEquals(0.0, Calculator.multiply(-3.0, 0.0), DIFF),
